@@ -19,6 +19,8 @@
 
 ## Блок 2 - cgroups
 `cat /sys/fs/cgroup/mytest/cpu.max` - ваш лимит
+<img width="731" height="38" alt="Снимок экрана от 2026-03-26 17-02-49" src="https://github.com/user-attachments/assets/110bb73a-8ca8-4bdc-9e9e-17eee87133da" />
+
 
 **Контрольный вопрос:** Что произойдёт если лимит памяти превысить? (OOM-killer)
 
@@ -26,6 +28,8 @@
 
 ## Блок 3 - chroot
 `ls /` внутри chroot
+<img width="731" height="76" alt="Снимок экрана от 2026-03-26 17-03-09" src="https://github.com/user-attachments/assets/2cd18faa-fa57-4acb-8065-ea40ee02d7e7" />
+
 
 P.s: Столкнулся с проблемой, что в chroot окружении нельзя выполнить ls(ругается на отсутствие библиотеки `$\text{libselinux.so.1}$`), поэтому использовал следующие команды
 ```bash
